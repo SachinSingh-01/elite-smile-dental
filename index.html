@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elite Smile Dental Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elite Smile Dental Clinic – Advanced dentistry with Dr. Sachin Singh. Cosmetic, implants, orthodontics and more in Guwahati, Assam.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="tooth-icon">
+      <svg viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 5C20 5 8 12 8 25C8 32 10 38 12 44C14 52 16 65 22 65C26 65 27 57 30 57C33 57 34 65 38 65C44 65 46 52 48 44C50 38 52 32 52 25C52 12 40 5 30 5Z" stroke="#C9A84C" stroke-width="2.5" fill="none"/>
+        <path d="M20 25C20 20 24 17 30 17C36 17 40 20 40 25" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Elite Smile Dental Clinic Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="logo-text" style="display:none">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 28" fill="none" width="28"><path d="M12 2C7 2 2 5.5 2 11c0 3.5 1 6.5 2 9.5C5 23.5 6 28 9 28c2 0 2.5-3.5 3-3.5S15 28 17 28c3 0 4-4.5 5-7.5 1-3 2-6 2-9.5 0-5.5-5-9-12-9Z" stroke="#C9A84C" stroke-width="1.8" fill="none"/></svg>
+        </span>
+        <div>
+          <div class="logo-name">Elite Smile</div>
+          <div class="logo-sub">DENTAL CLINIC</div>
+        </div>
+      </div>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="#" class="nav-link"><span>Home</span></a>
+      <a href="#doctor" class="nav-link"><span>Doctor</span></a>
+      <a href="#results" class="nav-link"><span>Results</span></a>
+      <a href="#experience" class="nav-link"><span>Experience</span></a>
+      <a href="#gallery" class="nav-link"><span>Gallery</span></a>
+      <a href="#contact" class="nav-link"><span>Contact</span></a>
+      <a href="#appointment" class="nav-cta">Book Now</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="assets/images/room1.jpg" alt="Clinic" class="hero-bg-img" id="parallaxBg">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">★ Trusted by 5,000+ Patients</div>
+    <h1 class="hero-title">
+      <span class="hero-title-line" style="--delay:0.2s">Creating</span>
+      <span class="hero-title-line italic" style="--delay:0.45s">Confident</span>
+      <span class="hero-title-line" style="--delay:0.7s">Smiles</span>
+    </h1>
+    <p class="hero-sub">Advanced Dentistry &nbsp;·&nbsp; Modern Equipment &nbsp;·&nbsp; Trusted Care</p>
+    <div class="hero-actions">
+      <a href="#appointment" class="btn-primary">Book Appointment</a>
+      <a href="#doctor" class="btn-ghost">Meet the Doctor</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="counter" data-target="5000">0</span>+<div>Cases</div></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="counter" data-target="12">0</span>+<div>Years Exp.</div></div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat"><span class="counter" data-target="98">0</span>%<div>Satisfaction</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- SERVICES TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>Smile Makeover</span>
+    <span class="ticker-dot">◆</span>
+    <span>Dental Implants</span>
+    <span class="ticker-dot">◆</span>
+    <span>Orthodontics</span>
+    <span class="ticker-dot">◆</span>
+    <span>Cosmetic Dentistry</span>
+    <span class="ticker-dot">◆</span>
+    <span>Root Canal Therapy</span>
+    <span class="ticker-dot">◆</span>
+    <span>Teeth Whitening</span>
+    <span class="ticker-dot">◆</span>
+    <span>Clear Aligners</span>
+    <span class="ticker-dot">◆</span>
+    <span>Pediatric Dentistry</span>
+    <span class="ticker-dot">◆</span>
+    <span>Smile Makeover</span>
+    <span class="ticker-dot">◆</span>
+    <span>Dental Implants</span>
+    <span class="ticker-dot">◆</span>
+    <span>Orthodontics</span>
+    <span class="ticker-dot">◆</span>
+    <span>Cosmetic Dentistry</span>
+    <span class="ticker-dot">◆</span>
+    <span>Root Canal Therapy</span>
+    <span class="ticker-dot">◆</span>
+    <span>Teeth Whitening</span>
+    <span class="ticker-dot">◆</span>
+    <span>Clear Aligners</span>
+    <span class="ticker-dot">◆</span>
+    <span>Pediatric Dentistry</span>
+    <span class="ticker-dot">◆</span>
+  </div>
+</div>
+
+<!-- DOCTOR SECTION -->
+<section class="section section-doctor" id="doctor">
+  <div class="section-bg-label">Doctor</div>
+  <div class="doctor-container">
+    <div class="doctor-image-wrap reveal-left">
+      <div class="doctor-image-frame">
+        <img src="assets/images/sachin.jpg" alt="Dr. Sachin Singh" class="doctor-img">
+        <div class="doctor-badge-card">
+          <div class="badge-icon">🏆</div>
+          <div>
+            <div class="badge-num">5,000+</div>
+            <div class="badge-lbl">Successful Cases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doctor-info reveal-right">
+      <div class="section-eyebrow">Meet the Specialist</div>
+      <h2>Dr. Sachin Singh</h2>
+      <div class="doctor-degree">BDS, MDS (Prosthodontics) &nbsp;|&nbsp; 12+ Years Experience</div>
+      <p class="doctor-bio">With a passion for creating confident, healthy smiles, Dr. Sachin Singh is a highly skilled dental specialist. Believing in pain-free treatments, he uses state-of-the-art technology to deliver precise and comfortable care for every patient.</p>
+      <div class="credentials-grid">
+        <div class="cred-item">
+          <div class="cred-icon">🦷</div>
+          <div>
+            <div class="cred-title">Specialization</div>
+            <div class="cred-val">Cosmetic Dentistry & Implants</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">📜</div>
+          <div>
+            <div class="cred-title">Certification</div>
+            <div class="cred-val">Advanced Endodontics</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🏅</div>
+          <div>
+            <div class="cred-title">Membership</div>
+            <div class="cred-val">Indian Dental Association (IDA)</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">⭐</div>
+          <div>
+            <div class="cred-title">Experience</div>
+            <div class="cred-val">5,000+ Successful Cases</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section section-services" id="services">
+  <div class="section-bg-label">Services</div>
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">What We Offer</div>
+    <h2>Comprehensive Dental Care</h2>
+    <p>Every treatment is tailored to your unique smile and delivered with world-class precision.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal-up" style="--i:0">
+      <div class="service-icon">🦷</div>
+      <h3>Cosmetic Dentistry</h3>
+      <p>Veneers, bonding, and whitening to craft a radiant, camera-ready smile.</p>
+    </div>
+    <div class="service-card reveal-up" style="--i:1">
+      <div class="service-icon">🔩</div>
+      <h3>Dental Implants</h3>
+      <p>Permanent, natural-looking replacements that restore function and confidence.</p>
+    </div>
+    <div class="service-card reveal-up" style="--i:2">
+      <div class="service-icon">😁</div>
+      <h3>Orthodontics</h3>
+      <p>Braces and clear aligners to align your teeth with precision and comfort.</p>
+    </div>
+    <div class="service-card reveal-up" style="--i:3">
+      <div class="service-icon">🩺</div>
+      <h3>Root Canal Therapy</h3>
+      <p>Advanced, near-painless endodontic care to save and restore damaged teeth.</p>
+    </div>
+    <div class="service-card reveal-up" style="--i:4">
+      <div class="service-icon">✨</div>
+      <h3>Teeth Whitening</h3>
+      <p>Professional-grade whitening that delivers dramatic results in a single visit.</p>
+    </div>
+    <div class="service-card reveal-up" style="--i:5">
+      <div class="service-icon">👶</div>
+      <h3>Pediatric Dentistry</h3>
+      <p>Gentle, child-friendly care that builds healthy dental habits for life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="section section-results" id="results">
+  <div class="section-bg-label">Results</div>
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Real Transformations</div>
+    <h2>Our Results</h2>
+    <p>Real patient transformations and successful treatments that speak for themselves.</p>
+  </div>
+  <div class="results-grid">
+    <div class="pro-card reveal-up" style="--i:0">
+      <div class="pro-image">
+        <img src="assets/images/before1.jpg" alt="Complete Smile Makeover" loading="lazy">
+        <div class="pro-overlay">
+          <span>View Case</span>
+        </div>
+      </div>
+      <div class="pro-details">
+        <div class="pro-tag">Cosmetic</div>
+        <h3>Complete Smile Makeover</h3>
+        <p>Advanced restorative treatment delivering a natural and confident smile.</p>
+      </div>
+    </div>
+    <div class="pro-card reveal-up" style="--i:1">
+      <div class="pro-image">
+        <img src="assets/images/before2.jpg" alt="Orthodontic Correction" loading="lazy">
+        <div class="pro-overlay">
+          <span>View Case</span>
+        </div>
+      </div>
+      <div class="pro-details">
+        <div class="pro-tag">Orthodontics</div>
+        <h3>Orthodontic Correction</h3>
+        <p>Perfect alignment achieved through careful and precise treatment planning.</p>
+      </div>
+    </div>
+    <div class="pro-card reveal-up" style="--i:2">
+      <div class="pro-image">
+        <img src="assets/images/before3.jpg" alt="Aesthetic Restoration" loading="lazy">
+        <div class="pro-overlay">
+          <span>View Case</span>
+        </div>
+      </div>
+      <div class="pro-details">
+        <div class="pro-tag">Restoration</div>
+        <h3>Aesthetic Restoration</h3>
+        <p>Restored function and aesthetics for a bright, healthy appearance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / PATIENTS SECTION -->
+<section class="section section-experience" id="experience">
+  <div class="section-bg-label">Experience</div>
+  <div class="experience-layout">
+    <div class="experience-text reveal-left">
+      <div class="section-eyebrow">Doctor With Patients</div>
+      <h2>Compassionate<br><em>Care You Can Trust</em></h2>
+      <p>Every visit at Elite Smile is an experience — from the warm welcome at reception to the gentle, expert hands of Dr. Sachin. We believe great dentistry is about trust as much as technique.</p>
+      <div class="exp-stats">
+        <div class="exp-stat">
+          <span class="counter" data-target="5000">0</span>+
+          <div>Happy Patients</div>
+        </div>
+        <div class="exp-stat">
+          <span class="counter" data-target="12">0</span>+
+          <div>Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+    <div class="experience-photos reveal-right">
+      <div class="photo-mosaic">
+        <img src="assets/images/patient1.jpg" alt="Dentist consulting with a happy patient" class="mosaic-img mosaic-1" loading="lazy">
+        <img src="assets/images/patient2.jpg" alt="Patient smiling after dental procedure" class="mosaic-img mosaic-2" loading="lazy">
+        <img src="assets/images/patient3.jpg" alt="Doctor examining patient" class="mosaic-img mosaic-3" loading="lazy">
+        <img src="assets/images/patient4.jpg" alt="Friendly dental clinic staff" class="mosaic-img mosaic-4" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-testimonials">
+  <div class="section-bg-label">Reviews</div>
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Patient Stories</div>
+    <h2>What Our Patients Say</h2>
+  </div>
+  <div class="testimonials-track" id="testimonialsTrack">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"The best dental experience I've ever had. Dr. Sachin is incredibly skilled and the clinic is immaculate. My smile has never looked better!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">R</div>
+        <div><div class="author-name">Rahul Sharma</div><div class="author-city">Guwahati</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"I was terrified of dental visits before. The team made me feel so comfortable. The implant procedure was completely painless. Absolutely recommend!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">P</div>
+        <div><div class="author-name">Priya Dutta</div><div class="author-city">Assam</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"Got my braces done here. The results are stunning. The doctor explains everything clearly and the staff is always so kind and helpful."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">A</div>
+        <div><div class="author-name">Ankit Bora</div><div class="author-city">Guwahati</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>"My smile makeover transformed my confidence. Worth every rupee. The clinic is equipped with the latest technology and Dr. Sachin is a true artist."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">S</div>
+        <div><div class="author-name">Sonal Gogoi</div><div class="author-city">Assam</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-dots" id="testimonialDots"></div>
+</section>
+
+<!-- GALLERY / CLINIC SECTION -->
+<section class="section section-gallery" id="gallery">
+  <div class="section-bg-label">Clinic</div>
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Our Environment</div>
+    <h2>Modern Clinic <em>Designed for Comfort</em></h2>
+    <p>State-of-the-art facilities built around your comfort and safety.</p>
+  </div>
+  <div class="clinic-gallery">
+    <div class="gallery-item gallery-large reveal-up" style="--i:0">
+      <img src="assets/images/room1.jpg" alt="Modern dental operation room" loading="lazy">
+      <div class="gallery-caption">Treatment Room</div>
+    </div>
+    <div class="gallery-item reveal-up" style="--i:1">
+      <img src="assets/images/room2.jpg" alt="Comfortable waiting area" loading="lazy">
+      <div class="gallery-caption">Waiting Lounge</div>
+    </div>
+    <div class="gallery-item reveal-up" style="--i:2">
+      <img src="assets/images/room3.jpg" alt="Advanced dental X-ray equipment" loading="lazy">
+      <div class="gallery-caption">X-Ray Suite</div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT FORM -->
+<section class="section section-appointment" id="appointment">
+  <div class="appointment-layout">
+    <div class="appointment-info reveal-left">
+      <div class="section-eyebrow">Easy Booking</div>
+      <h2>Request an<br><em>Appointment</em></h2>
+      <p>Fill out your details and we'll contact you within 2 hours to confirm your slot.</p>
+      <div class="appt-features">
+        <div class="appt-feat"><span>✓</span> Same-day appointments available</div>
+        <div class="appt-feat"><span>✓</span> Flexible morning & evening slots</div>
+        <div class="appt-feat"><span>✓</span> Emergency dental care</div>
+        <div class="appt-feat"><span>✓</span> Insurance & EMI accepted</div>
+      </div>
+      <div class="appt-contact-row">
+        <a href="tel:+911234567890" class="appt-phone">📞 +91 12345 67890</a>
+      </div>
+    </div>
+    <div class="form-container reveal-right">
+      <form id="booking-form" novalidate>
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name" autocomplete="name">
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 12345 67890" autocomplete="tel">
+          </div>
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="reason">Reason for Visit</label>
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Select a reason...</option>
+            <option value="General Checkup">General Checkup & Cleaning</option>
+            <option value="Toothache">Toothache / Emergency</option>
+            <option value="Cosmetic">Cosmetic Dentistry</option>
+            <option value="Orthodontics">Braces / Aligners</option>
+            <option value="Implants">Dental Implants</option>
+            <option value="Whitening">Teeth Whitening</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="message">Additional Message <span class="optional">(Optional)</span></label>
+          <textarea id="message" name="message" placeholder="Any details about your condition or preferred time..." rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submit-btn">
+          <span class="btn-text">Send Request</span>
+          <span class="btn-arrow">→</span>
+        </button>
+        <p id="form-message" style="display: none;" role="alert"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section section-contact" id="contact">
+  <div class="section-header reveal-up">
+    <div class="section-eyebrow">Find Us</div>
+    <h2>Contact Us & Location</h2>
+  </div>
+  <div class="contact-layout">
+    <div class="contact-details reveal-left">
+      <div class="contact-card">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-val">Elite Smile Dental Clinic<br>Guwahati, Assam, India</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <a href="tel:+911234567890" class="contact-val contact-link">+91 12345 67890</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-label">Hours</div>
+            <div class="contact-val">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: Emergency Only</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <a href="mailto:info@elitesmile.in" class="contact-val contact-link">info@elitesmile.in</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/911234567890" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="map-container reveal-right">
+      <iframe src="https://maps.google.com/maps?q=Guwahati,%20Assam,%20India&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Clinic Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 24 28" fill="none" width="30"><path d="M12 2C7 2 2 5.5 2 11c0 3.5 1 6.5 2 9.5C5 23.5 6 28 9 28c2 0 2.5-3.5 3-3.5S15 28 17 28c3 0 4-4.5 5-7.5 1-3 2-6 2-9.5 0-5.5-5-9-12-9Z" stroke="#C9A84C" stroke-width="1.8" fill="none"/></svg>
+        <span>Elite Smile</span>
+      </div>
+      <p>Creating confident smiles with advanced dentistry and trusted care since 2012.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Navigation</div>
+        <a href="#">Home</a>
+        <a href="#doctor">Doctor</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="#">Cosmetic Dentistry</a>
+        <a href="#">Dental Implants</a>
+        <a href="#">Orthodontics</a>
+        <a href="#">Root Canal</a>
+        <a href="#">Teeth Whitening</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="tel:+911234567890">+91 12345 67890</a>
+        <a href="mailto:info@elitesmile.in">info@elitesmile.in</a>
+        <a href="#">Guwahati, Assam, India</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Elite Smile Dental Clinic. All rights reserved.</p>
+    <p>Designed with ❤️ for better smiles.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/911234567890" class="floating-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+<script>
+  emailjs.init("GOydHJrIyoANtr4L5");
+
+  document.getElementById('booking-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    const msg = document.getElementById('form-message');
+    const btnText = btn.querySelector('.btn-text');
+
+    btnText.textContent = 'Sending...';
+    btn.disabled = true;
+    btn.classList.add('loading');
+
+    emailjs.sendForm('service_ikjy30a', 'template_abwvt3k', this)
+      .then(() => {
+        btn.classList.remove('loading');
+        btn.classList.add('success');
+        btnText.textContent = '✓ Request Sent!';
+        msg.style.display = 'block';
+        msg.className = 'form-msg-success';
+        msg.textContent = 'Success! We\'ll contact you within 2 hours to confirm your appointment.';
+        this.reset();
+      }, (error) => {
+        btn.classList.remove('loading');
+        btn.disabled = false;
+        btnText.textContent = 'Send Request';
+        msg.style.display = 'block';
+        msg.className = 'form-msg-error';
+        msg.textContent = 'Something went wrong. Please call us directly at +91 12345 67890.';
+        console.error('EmailJS Error:', error);
+      });
+  });
+</script>
+</body>
+</html>
